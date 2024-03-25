@@ -30,6 +30,9 @@
     height:50px;
     margin-left:5px;
     border-radius: 8px;
+    border: 1px solid black;
+    line-height: 50px;
+    padding-left: 5%;
 
 }
 
