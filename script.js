@@ -12,7 +12,8 @@ button.addEventListener("click",()=>{
     if(image!=undefined){
         image.remove()
     }
-    if(input.value!=''){
+    if(input.value!=""){
+      //  console.log("entered")
           let newElement=document.createElement("img")
           newElement.src=url+input.value;
           
@@ -25,6 +26,15 @@ button.addEventListener("click",()=>{
           },1000)
          
 
+    }
+    else{
+       // console.log(input.val)
+        input.style.animationPlayState="running"
+        
+        setTimeout(()=>{
+            input.style.animationPlayState="paused" 
+        },1000)
+        
     }
 })
 
